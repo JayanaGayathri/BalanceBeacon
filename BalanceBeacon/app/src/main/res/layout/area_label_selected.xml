@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+<!--    android:paddingStart="5dp"-->
+<!--    android:paddingLeft="5dp"-->
+<!--    android:paddingTop="5dp"-->
+<!--    android:paddingEnd="5dp"-->
+<!--    android:paddingBottom="5dp">-->
+
+    <TextView
+        android:id="@+id/area_linear_selected_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        android:background="@drawable/area_button_design_selected"
+        android:fontFamily="@font/sf_dispaly_medium"
+        android:gravity="center"
+        android:minWidth="90dp"
+        android:maxWidth="110dp"
+        android:padding="5dp"
+        android:text="Health &amp; Fitness"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+</RelativeLayout>

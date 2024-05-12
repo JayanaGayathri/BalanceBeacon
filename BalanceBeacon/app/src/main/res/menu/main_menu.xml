@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_main_page"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="Main Page"/>
+
+
+    <item
+        android:id="@+id/menu_my_goals"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="My Goals" />
+
+    <item
+        android:id="@+id/menu_achievments"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="Achievments" />
+
+    <item
+        android:id="@+id/menu_coaching_mentoring"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="Coaching &amp; mentoring" />
+
+    <item
+        android:id="@+id/menu_feedback"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/menu_export"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/arrow_back_icon"
+        android:title="Logout" />
+</menu>

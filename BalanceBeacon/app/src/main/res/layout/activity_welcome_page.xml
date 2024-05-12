@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Components.WelcomePage">
+
+    <ImageView
+        android:id="@+id/welcome_logo"
+        android:layout_width="318dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome_logo" />
+
+    <ImageView
+        android:id="@+id/welcome_login_button"
+        android:layout_width="395dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_logo"
+        app:srcCompat="@drawable/welcome_button" />
+
+    <ImageView
+        android:id="@+id/welcome_register_button"
+        android:layout_width="395dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_login_button"
+        app:srcCompat="@drawable/welcome_register_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

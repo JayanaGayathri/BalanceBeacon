@@ -1,0 +1,548 @@
+{
+	"info": {
+		"_postman_id": "21b0a6aa-0e1f-4c65-8407-6d697df3b7d3",
+		"name": "BalanceBeacon - Gayathri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6999590"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Peters\",\r\n    \"userEmail\": \"test12345\",\r\n    \"userPhone\": \"0765842111\",\r\n    \"userGender\": 0,\r\n    \"userAge\": 29,\r\n    \"userPassword\": \"12345\",\r\n    \"userStatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/delete/gayathri2@gmail.com",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"delete",
+								"gayathri2@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"zink@mail.com\",\r\n    \"userPassword\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Areas",
+			"item": [
+				{
+					"name": "Create Area",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"areaDescription\": \"Personal Growth\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/area/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"area",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Area",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/area/delete/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"area",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Areas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/goals/get/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"goals",
+								"get",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assessments",
+			"item": [
+				{
+					"name": "Add User Areas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 15,\r\n    \"userChosenAreas\": [\r\n    {\r\n        \"areaId\": 4,\r\n        \"areaDescription\": \"Love. Family. Kids\",\r\n        \"areaCreatedDate\": \"2024-04-08T22:48:28\"\r\n    },\r\n    {\r\n        \"areaId\": 5,\r\n        \"areaDescription\": \"Hobbies. Fun\",\r\n        \"areaCreatedDate\": \"2024-04-08T23:04:20\"\r\n    },\r\n    {\r\n        \"areaId\": 6,\r\n        \"areaDescription\": \"Money\",\r\n        \"areaCreatedDate\": \"2024-04-08T23:04:27\"\r\n    },\r\n    {\r\n        \"areaId\": 7,\r\n        \"areaDescription\": \"Education\",\r\n        \"areaCreatedDate\": \"2024-04-08T23:04:32\"\r\n    },\r\n    {\r\n        \"areaId\": 8,\r\n        \"areaDescription\": \"Health & Fitness\",\r\n        \"areaCreatedDate\": \"2024-04-08T23:04:42\"\r\n    }\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/assess/area/request",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"assess",
+								"area",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Areas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/assess/user/areas/all/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"assess",
+								"user",
+								"areas",
+								"all",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Areas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"responseCode\": 200,\r\n    \"responseDescription\": \"Areas loaded successfully\",\r\n    \"userId\": 11,\r\n    \"assessmentId\": 15,\r\n    \"assessmentPayloads\": [\r\n        {\r\n            \"areaId\": 5,\r\n            \"areaDescription\": \"Hobbies. Fun\",\r\n            \"areaCurrent\": 2,\r\n            \"areaFuture\": 8,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 6,\r\n            \"areaDescription\": \"Money\",\r\n            \"areaCurrent\": 2,\r\n            \"areaFuture\": 10,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 8,\r\n            \"areaDescription\": \"Health & Fitness\",\r\n            \"areaCurrent\": 10,\r\n            \"areaFuture\": 10,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 9,\r\n            \"areaDescription\": \"Time Manage\",\r\n            \"areaCurrent\": 5,\r\n            \"areaFuture\": 9,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 11,\r\n            \"areaDescription\": \"Recreation\",\r\n            \"areaCurrent\": 7,\r\n            \"areaFuture\": 5,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 12,\r\n            \"areaDescription\": \"Sex & Romance\",\r\n            \"areaCurrent\": 1,\r\n            \"areaFuture\": 9,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 13,\r\n            \"areaDescription\": \"Spirituality\",\r\n            \"areaCurrent\": 4,\r\n            \"areaFuture\": 5,\r\n            \"areaStatus\": true\r\n        },\r\n        {\r\n            \"areaId\": 14,\r\n            \"areaDescription\": \"Personal Growth\",\r\n            \"areaCurrent\": 1,\r\n            \"areaFuture\": 10,\r\n            \"areaStatus\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/assess/user/areas/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"assess",
+								"user",
+								"areas",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tips",
+			"item": [
+				{
+					"name": "Get All Tips - for user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/tips/get/all/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"tips",
+								"get",
+								"all",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tips",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"areaId\": 14,\r\n    \"tipDescription\": \"Stay curious and open-minded to new experiences and ideas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/tips/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"tips",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User Tips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/tips/12/31/0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"tips",
+								"12",
+								"31",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Tips",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userTipId\": 6,\r\n    \"areaDescription\": \"Love. Family. Kids\",\r\n    \"tipDescription\": \"Plan family activities or trips during breaks\",\r\n    \"tipStatus\": 1,\r\n    \"goalDays\": \"10 Days\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/tips/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"tips",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Goals",
+			"item": [
+				{
+					"name": "Get All Goals",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Achievements",
+			"item": [
+				{
+					"name": "Get Achievements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/achievements/get/all/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"achievements",
+								"get",
+								"all",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coaches",
+			"item": [
+				{
+					"name": "Add Coaches",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"coachName\": \"Dr. Jo Robinson\",\r\n    \"coachGender\": \"Female\",\r\n    \"coachSpeciality\": \"Psychologist and Coach\",\r\n    \"phoneNumber\": \"+44-2688-731-354\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/coach/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"coach",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Coaches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/coach/get/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"coach",
+								"get",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "Add Feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 10,\r\n    \"feedbackRate\": 3.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/feedback/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"feedback",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
